@@ -1,0 +1,10 @@
+A("Start") --> B["Subject1 = 
+    Subject2 = 
+    Subject3 ="]
+    B --> C["Total = Subject1+Subject2+Subject3"]
+    C --> D["Average = Total / 3"]
+    D --> E{"If Average =&lt; 75"}
+    E -- YES --> F["You Failed"]
+    E -- NO --> G["You Passed"]
+    F --> H("END")
+    G --> H
